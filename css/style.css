@@ -25,7 +25,7 @@
   --info: #17a2b8;
   --warning: #ffc107;
   --danger: #dc3545;
-  --light: #FFFFFF;
+  --light: #f8f9fa; /* #FFFFFF */
   --dark: #22395d;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -44,7 +44,7 @@
 
 html {
   /* font-family: sans-serif; original */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -57,14 +57,30 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   /* font-family: "Montserrat", sans-serif; original */
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #818491;
   text-align: left;
-  background-color: #FFFFFF;
+  background-color: #f8f9fa; /* #ffffff */
 }
+
+
+/* .inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+nav .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+} */
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
@@ -364,7 +380,8 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: 'Nanum Gothic', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: #22395d;
@@ -425,7 +442,7 @@ h6, .h6 {
 
 .display-1 {
   font-size: 6rem;
-  font-weight: 300;
+  font-weight: 700; /* Original : 300 */
   line-height: 1.2;
 }
 
@@ -459,15 +476,30 @@ h6, .h6 {
   }
 }
 
+/* Navigation Bar Center 문자 */
 .display-4 {
   font-size: 3.5rem; /* 3.5rem */
-  font-weight: 300;
+  font-weight: 300; /* 300 */
   line-height: 1.2;
 }
 
 @media (max-width: 1200px) {
   .display-4 {
     font-size: calc(1.475rem + 2.7vw) ;
+  }
+}
+
+
+/* ADD JK 23.05.08 */
+.display-5 {
+  font-size: 2.0rem; /* 3.5rem */
+  font-weight: 300; /* 300 */
+  line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+  .display-5 {
+    font-size: calc(1.375rem + 1.3vw) ;
   }
 }
 
@@ -1252,8 +1284,8 @@ pre code {
     max-width: 33.33333%;
   }
   .col-lg-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%;
+    flex: 0 0 41.66667%; /* 41.66667%*/
+    max-width: 41.66667%; /* 41.66667%;*/
   }
   .col-lg-6 {
     flex: 0 0 50%;
@@ -2368,14 +2400,16 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #009CFF;
+  background-color: #009CFF;  /* HOME 방향키 Color */
   border-color: #009CFF;
+  border-radius: 10px;  /* 23.05.08 */
 }
 
 .btn-primary:hover {
   color: #fff;
   background-color: #0085d9;
   border-color: #007dcc;
+  border-radius: 10px;  /* 23.05.08 */
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -2942,7 +2976,7 @@ fieldset:disabled a.btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   line-height: 1.5;
-  border-radius: 0;
+  border-radius: 10px; /*0; 23.05.08 */
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -3994,6 +4028,20 @@ input[type="button"].btn-block {
   flex-grow: 1;
   text-align: center;
 }
+
+/* S_JK ADD 23.05.08 */
+.nav-item-logo  {
+  /* flex: 1 1 auto; */
+  text-align: left;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.nav-item-logo:hover, .nav-item-logo:focus {
+  text-decoration: none;
+}
+/* E_JK ADD 23.05.08 */
+
 
 .tab-content > .tab-pane {
   display: none;
@@ -5499,6 +5547,7 @@ a.close.disabled {
 }
 
 .modal-title {
+  font-weight: 700; /* JK ADD 23.05.08 */
   margin-bottom: 0;
   line-height: 1.5;
 }
@@ -5571,7 +5620,9 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: 'Nanum Gothic', sans-serif;
+
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6169,7 +6220,7 @@ button.bg-light:focus {
 
 .bg-dark {
   /* background-color: #22395d !important; */
-  background-color: #000 !important;
+  background-color: #2d2926 !important; /* 네비게이션바 백그라운드 컬러 지정 */
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -7390,7 +7441,7 @@ button.bg-dark:focus {
 }
 
 .ml-2,
--3.mx-2 {
+.mx-2 {
   margin-left: 0.5rem !important;
 }
 
@@ -7741,7 +7792,7 @@ button.bg-dark:focus {
 
 .mr-auto,
 .mx-auto {
-  margin-right: auto !important;
+  margin-right: auto; /* !important; */
 }
 
 .mb-auto,
@@ -9253,7 +9304,7 @@ button.bg-dark:focus {
 }
 
 .font-weight-bold {
-  font-weight: 700 !important;
+  font-weight: 700 ; /*!important*/
 }
 
 .font-weight-bolder {
@@ -9269,7 +9320,8 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #009CFF !important;
+  /* color: #009CFF !important; */
+  color: #009CFF; /* Text 컬러 */
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -9457,13 +9509,15 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /********** Template CSS ************/
-h1, h2, h3 {
+
+/* 23.05.08 */
+/* h1, h2, h3 {
   font-weight: 700 !important;
 }
 
 h4, h5, h6 {
   font-weight: 500 !important;
-}
+} */
 
 .btn-square {
   width: 40px;
@@ -9524,8 +9578,8 @@ h4, h5, h6 {
   padding: 25px 10px;
   color: #FFFFFF;
   letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 14px;
+  /* text-transform: uppercase; 23.05.08 */
+  font-size: 16px;
   font-weight: 600;
   outline: none;
 }
@@ -9562,7 +9616,7 @@ h4, h5, h6 {
   height: 2px;  /* 2px */
   bottom: 12px;
   left: calc(50% - 75px);
-  background: #009CFF; /* 서비스 밑 Underline Color */
+  /* background: #009CFF; */ /* 서비스 밑 Underline Color */
 }
 
 .section-title::after {
@@ -9572,7 +9626,7 @@ h4, h5, h6 {
   height: 2px;
   bottom: 8px;
   left: calc(50% - 60px);
-  background: #009CFF; /* 서비스 밑 Underline Color */
+  /* background: #009CFF;*/ /* 서비스 밑 Underline Color */
 }
 
 .product-img,
@@ -9613,6 +9667,7 @@ h4, h5, h6 {
 }
 
 .bg-gallery {
+  /* background-color: #FFFFFF; */
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/ucheck/ucheckin_introduce_01.JPG), no-repeat center center;
   background-size: cover;
 }
@@ -9642,6 +9697,7 @@ h4, h5, h6 {
   color: #009CFF;
   background: #FFFFFF;
   font-size: 30px;
+  border-radius: 10px;  /* ADD JK 23.05.08 */
 }
 
 .testimonial-carousel .owl-nav .owl-prev,
@@ -9654,4 +9710,35 @@ h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+
+
+
+
+.info {
+  /* margin-top: 30px; */
+  text-align: center;
+  background-color: #000;
+}
+.info span {
+  margin-right: 20px;
+  color: #999;
+  font-size: 12px;
+  background-color: #000;
+}
+.info span:last-child {
+  margin-right: 0;
+  background-color: #000;
+}
+.copyright {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  /* margin-top: 12px; */
+  background-color: #000;
+}
+.logo {
+  /* margin: 30px auto 0; */
+  background-color: #000;
 }
