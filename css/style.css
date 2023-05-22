@@ -44,7 +44,9 @@
 
 html {
   /* font-family: sans-serif; original */
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -57,7 +59,9 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   /* font-family: "Montserrat", sans-serif; original */
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -194,7 +198,9 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
   font-size: 1em;
 }
 
@@ -381,7 +387,9 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   /* font-family: "Roboto", sans-serif; */
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: #22395d;
@@ -441,8 +449,8 @@ h6, .h6 {
 }
 
 .display-1 {
-  font-size: 6rem;
-  font-weight: 700; /* Original : 300 */
+  font-size: 6rem;  /* Original : 6rem */
+  font-weight: 300; /* Original : 300 */
   line-height: 1.2;
 }
 
@@ -489,10 +497,9 @@ h6, .h6 {
   }
 }
 
-
 /* ADD JK 23.05.08 */
 .display-5 {
-  font-size: 2.0rem; /* 3.5rem */
+  font-size: 3.0rem; /* 3.5rem */
   font-weight: 300; /* 300 */
   line-height: 1.2;
 }
@@ -561,6 +568,7 @@ mark,
 }
 
 .img-fluid {
+/*  max-width: 100%; */
   max-width: 100%;
   height: auto;
 }
@@ -1287,6 +1295,12 @@ pre code {
     flex: 0 0 41.66667%; /* 41.66667%*/
     max-width: 41.66667%; /* 41.66667%;*/
   }
+
+  .col-lg-5-new {
+    flex: 0 0 30%; /* 41.66667%*/
+    max-width: 30%; /* 41.66667%;*/
+  }
+
   .col-lg-6 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -5621,7 +5635,9 @@ a.close.disabled {
   display: block;
   margin: 0;
   /* font-family: "Montserrat", sans-serif; */
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
 
   font-style: normal;
   font-weight: 400;
@@ -5734,7 +5750,9 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Montserrat", sans-serif;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -9198,7 +9216,9 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
 }
 
 .text-justify {
@@ -9668,7 +9688,7 @@ h4, h5, h6 {
 
 .bg-gallery {
   /* background-color: #FFFFFF; */
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/ucheck/ucheckin_introduce_01.JPG), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/ucheck/ucheckin_introduce_01.JPG), no-repeat center center;
   background-size: cover;
 }
 
@@ -9713,11 +9733,84 @@ h4, h5, h6 {
 }
 
 
+/* JK_S HEADER TEST 23.05.09 */
 
 
+
+
+/*HEADER*/
+header {
+  width: 100%;
+  position: fixed;
+  /* position: relative; */
+  top: 0;
+  z-index: 9;
+  background-color: #000; /* Gray Lilac : #d4cacd */
+  border-bottom: 1px solid #000;
+}
+header > .inner {
+  height: 80px;  /* Header 고정 높이 */ 
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+header .logo {
+  display: block;
+  margin: 10px 0 10px 50px; /* TOP RIGHT BOTTOM LEFT */
+/*  margin: 0 auto; */
+/*   margin-top: 10px;
+  height: auto;
+  margin-left: 10%; */
+  position: absolute;
+/*  top: 0;
+  bottom: 0;
+  left: 0; */
+  /* margin: auto; */
+  height: auto;
+}
+
+header .main-menu {
+  position: absolute;
+  top: 32px;    /* header size = 80px, font-size=16px, (80-16)/2 = 32px */
+  /* bottom: 0; */
+  right: 0;
+  z-index: 1;
+  display: flex;
+	margin-right: 50px;
+  margin: center;
+}
+header .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
+  font-size: 16px;
+  color: #f8f9fa;
+}
+header .main-menu .item:hover .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
+  font-size: 16px;
+  color: #00f;
+  text-decoration: none;
+}
+
+.home__section {
+  margin-top: 80px;
+  /* background-image: url("../images/visual_bg.jpg"); */
+  /* background-position: center; */
+}
+
+
+/* JK_E HEADER TEST 23.05.09 */
+
+
+/* JK_S TEST 23.05.09 */
 
 .info {
-  /* margin-top: 30px; */
+  margin-top: 30px;
   text-align: center;
   background-color: #000;
 }
@@ -9733,7 +9826,7 @@ h4, h5, h6 {
 }
 .copyright {
   color: #999;
-  font-size: 12px;
+  font-size: 18px;
   text-align: center;
   /* margin-top: 12px; */
   background-color: #000;
@@ -9742,3 +9835,90 @@ h4, h5, h6 {
   /* margin: 30px auto 0; */
   background-color: #000;
 }
+
+/*FOOTER*/
+footer {
+  background-color: #000;
+  border-top: 1px solid #333;
+}
+footer .inner {
+  /* TOP RIGHT BOTTOM LEFT */
+  padding: 30px 0 30px 0;
+}
+footer .menu {
+  display: flex;
+  justify-content: center;
+}
+footer .menu li {
+  position: relative;
+}
+footer .menu li::before {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  margin: auto;
+}
+footer .menu li:last-child::before {
+  display: none;
+}
+footer .menu li a {
+  display: block;
+  color: #f8f9fa;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px;
+}
+footer .menu li a:hover {
+  color: #00f;
+}
+
+footer .info {
+  margin-top: 30px;
+  text-align: center;
+}
+footer .info span {
+  margin-right: 20px;
+  color: #999;
+  font-size: 12px;
+}
+footer .info span:last-child {
+  margin-right: 0;
+}
+
+footer .copyright {
+  color: #f8f9fa;
+  font-size: 14px;
+  text-align: center;/*
+  margin-top: 12px; */
+  margin-bottom: 0;
+}
+
+.btn-primary-white-footer {
+  color: #f8f9fa;
+  border-color: #fff;
+  border-radius: 10px;  /* 23.05.08 */
+  width: 200px;
+  padding: 1rem 3rem 1rem 3rem;
+  text-decoration: none;
+}
+
+.btn-primary-white-footer:hover {
+  color: #333;
+  background-color: #fff;
+}
+/* JK_E TEST 23.05.09 */
+
+
+
+
+
+
+
+
+/* JK_E TEST 23.05.09 */

@@ -1,0 +1,383 @@
+body {
+	position: relative;
+	width: 100%;
+	margin-top: 80px;
+  font: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
+  background-color: #000;
+}
+
+/* JK_S HEADER TEST 23.05.09 */
+/*HEADER*/
+header {
+  width: 100%;
+  position: fixed;
+  /* position: relative; */
+  top: 0;
+  z-index: 9;
+  background-color: #000; /* Gray Lilac : #d4cacd */
+  border-bottom: 1px solid #333;
+}
+header > .inner {
+  height: 80px;  /* Header 고정 높이 */
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+header .logo {
+  display: block;
+  margin: 10px 0 10px 50px; /* TOP RIGHT BOTTOM LEFT */
+  position: absolute;
+  height: auto;
+}
+
+header .main-menu {
+  position: absolute;
+  top: 32px;    /* header size = 80px, font-size=16px, (80-16)/2 = 32px */
+  /* bottom: 0; */
+  right: 0;
+  z-index: 1;
+  display: flex;
+	margin-right: 50px;
+  margin: center;
+}
+header .main-menu .item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
+  font-size: 16px;
+  color: #f8f9fa;
+  text-decoration: none;
+}
+header .main-menu .item:hover .item__name {
+  padding: 10px 20px 34px 20px;
+  font-family: nskr, -apple-system, "droid sans fallback",
+  "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+  Dotum, 돋움, sans-serif;
+  font-size: 16px;
+  color: #00f;
+  text-decoration: none;
+}
+/* JK_E HEADER TEST 23.05.09 */
+
+.agreement {
+	color: #000;
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+/*    background-color: #000;   */
+}
+
+.agreement .agreement-title {
+    padding: 0px 50px 0px 50px;
+/*    border-top:1px solid #fff;    */
+}
+
+.agreement .agreement-title .inner  {
+	color: #000;
+    width: 100%
+    position: relative;
+}
+
+.agreement .agreement-title .inner p    {
+	color: #000;
+    margin-bottom: 50px;
+    font: normal 18px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    letter-spacing: -2px;
+    font-weight: 300;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #333;
+    line-height: 1.5;
+}
+
+.agreement .agreement-title .inner h1   {
+	color: #000;
+    margin-bottom: 25px;
+    font: normal 30px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    letter-spacing: -2px;
+    font-weight: 500;
+/*    text-align: center;   */
+}
+
+.agreement .agreement-title .inner h2   {
+	color: #000;
+    margin-bottom: 25px;
+    font: normal 26px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    letter-spacing: -2px;
+    font-weight: 300;
+/*    text-align: center;   */
+}
+
+.agreement .agreement-title .inner h3{
+	color: #000;
+    margin-bottom: 15px;
+    font: normal 24px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    letter-spacing: -2px;
+    font-weight: 300;
+}
+
+.agreement .agreement-title .inner ul.b2g_privacy__1 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-left: 20px;
+}
+
+.agreement .agreement-title .inner ul.b2g_privacy__1 li {
+    margin-bottom: 16px;
+    font: normal 16px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.agreement .agreement-title .inner ul.b2g_privacy__2 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-left: 20px;
+}
+.agreement .agreement-title .inner ul.b2g_privacy__2 li {
+    margin-bottom: 16px;
+    font: normal 16px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.agreement .agreement-title .inner ul.b2b_privacy__1 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-left: 20px;
+}
+
+.agreement .agreement-title .inner ul.b2b_privacy__1 li {
+    margin-bottom: 16px;
+    font: normal 16px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.agreement .agreement-title .inner ul.b2b_privacy__2 {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #333;
+    padding-left: 20px;
+}
+.agreement .agreement-title .inner ul.b2b_privacy__2 li {
+    margin-bottom: 16px;
+    font: normal 16px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+/* JK_S 23.05.16 */
+.introduce {
+  position: relative;
+  width: 100%;
+  padding: 50px 15px 30px 15px;
+/*  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  padding-left: 15px; */
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+}
+
+.introduce .section_title   {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+}
+
+.introduce .section_title h1   {
+    color: #009CFF;
+    margin-bottom: 25px;
+    font: normal 48px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    letter-spacing: -2px;
+    font-weight: 500;
+/*    text-align: center;   */
+}
+
+.introduce .row .col-lg-7 h1  {
+    color: #009CFF;
+    margin-bottom: 14px;
+    font: normal 30px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    letter-spacing: 0px;
+    font-weight: 500;
+/*    text-align: center;   */
+}
+
+.introduce .row .col-lg-7 h5  {
+    color: #000;
+    margin-bottom: 14px;
+    font: normal 24px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    letter-spacing: 0px;
+    font-weight: 500;
+/*    text-align: center;   */
+}
+
+.introduce .row .col-lg-7 p  {
+    color: #000;
+    margin-bottom: 14px;
+    font: normal 16px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+    letter-spacing: 0px;
+    font-weight: 300;
+/*    text-align: center;   */
+}
+
+.member-img {
+  position: relative;
+  overflow: hidden;
+/*  border: 1px solid #000; */
+}
+
+
+.row .col-lg-3 .mb-2 .text-center h5{
+    color: #000;
+    margin-bottom: 15px;
+    font: normal 16px nskr, -apple-system, "droid sans fallback",
+    "Apple SD Gothic Neo", AppleGothic, "Malgun Gothic", "맑은 고딕",
+    Dotum, 돋움, sans-serif;
+/*    letter-spacing: -2px; */
+    font-weight: 300;
+}
+
+
+/* JK_E 23.05.16 */
+
+
+
+
+/* JK_S TEST 23.05.09 */
+/*FOOTER*/
+footer {
+  background-color: #000;
+  border-top: 1px solid #333;
+}
+footer .inner {
+  /* TOP RIGHT BOTTOM LEFT */
+  padding: 30px 0 30px 0;
+}
+footer .menu {
+  display: flex;
+  justify-content: center;
+}
+footer .menu li {
+  position: relative;
+}
+footer .menu li::before {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: #555;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  margin: auto;
+}
+footer .menu li:last-child::before {
+  display: none;
+}
+footer .menu li a {
+  display: block;
+  color: #f8f9fa;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 15px;
+}
+footer .menu li a:hover {
+  color: #00f;
+}
+
+footer .info {
+  margin-top: 30px;
+  text-align: center;
+}
+footer .info span {
+  margin-right: 20px;
+  color: #999;
+  font-size: 12px;
+}
+footer .info span:last-child {
+  margin-right: 0;
+}
+
+footer .copyright {
+  color: #f8f9fa;
+  font-size: 14px;
+  text-align: center;/*
+  margin-top: 12px; */
+}
+
+.btn-primary-white-footer {
+  color: #f8f9fa;
+  border-color: #fff;
+  border-radius: 10px;  /* 23.05.08 */
+  width: 200px;
+  padding: 1rem 3rem 1rem 3rem;
+  text-decoration: none;
+}
+
+.btn-primary-white-footer:hover {
+  color: #333;
+  background-color: #fff;
+}
+
+.embed-youtube  {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-youtube iframe,
+.embed-youtube object,
+.embed-youtube embed    {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.embed_video	{
+	position: relative;
+	padding: 10px;
+/*	padding-bottom: 56.25%; */
+	width: 100%
+	max-width: 100%;
+	height: auto;
+	background-color: #fff;
+}
+
+
+
+
+

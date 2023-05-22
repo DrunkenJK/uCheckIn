@@ -1,22 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-
   <meta charset="utf-8">
   <title>U체크인</title>
-  <link rel="icon" href="./197px-LG_U+_BI.svg .png" />
+  <!-- Favicon -->
+  <link rel="icon" href="./img/ucheckin_logo_image_0515.png" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="Free HTML Templates" name="keywords">
   <meta content="Free HTML Templates" name="description">
-
-  <!-- TEST  -->
-  <!-- <meta charset="UTF-8"> -->
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <!-- <title>U 체크인</title> -->
-  <!-- <link rel="icon" href="./197px-LG_U+_BI.svg .png"> -->
-  <!-- Favicon -->
-  <link href="img/favicon.ico" rel="icon">
 
   <!-- 오픈 그래프 Add JK -->
   <meta property="og:type" content="website" />
@@ -30,8 +21,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
   <!-- Google Web Fonts -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700&display=swap" rel="stylesheet">  -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
   <!--Google Fonts - 나눔고딕-->
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
@@ -45,782 +36,727 @@
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Customized Bootstrap Stylesheet -->
-  <link href="css/style.css" rel="stylesheet">
+<!--  <link rel="stylesheet" href="./css/main.css">-->
+  <link rel="stylesheet" href="./css/test.css">
+
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-  <!-- Navbar Start -->
-  <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-5">
-    <!-- ADD JK 23.05.08 -->
-    <a href="index.html" class="nav-item nav-link">
-      <img src="./img/ucheck/homin_logo_bb.jpg" alt="">
-      <!-- <b>U 체크인</b> -->
-      <a href="#home" class="nav-item-logo">U체크인</a>
-    </a>      
-    <!-- </div> -->
+<body>
+  <!--	JK_S NavBar 23.05.19 Ref.Bootstrap-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top bg-light border-bottom px-1 mb-1">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html" style="font-weight:700">
+        <img src="./img/ucheckin_logo_image_0515.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        U체크인
+      </a>
 
-    <!-- <a href="index.html" class="navbar-brand d-block d-lg-none"> -->
-      <!-- <h1 class="display-4 text-white text-uppercase m-0">Solar</h1> -->
-      <!-- <h1 class="display-4 text-white text-uppercase m-0">U 체크인</h1> -->
-    <!-- </a> -->
-    <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button> -->
-    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-      <div class="navbar-nav ml-auto py-0">
-        <!-- <a href="#home" class="nav-item nav-link active">TEST</a> -->
-        <!-- <a href="#home" class="nav-item nav-link">U 체크인</a> -->
-        <!-- <a href="#about" class="nav-item nav-link">서비스 소개</a> -->
-        <!-- <a href="#service" class="nav-item nav-link">제공 서비스</a> -->
-        <!-- <a href="#service_flow" class="nav-item nav-link">Service Flow</a> -->
-      </div>
-        <!-- <a href="index.html" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block"> -->
-          <!-- <h1 class="display-4 text-white text-uppercase m-0">Solar</h1> -->
-          <!-- <h1 class="display-4 text-white text-uppercase m-0">U 체크인</h1> -->
-        <!-- </a> -->
-        <!-- 오른쪽으로 몰아 넣기 23.05.08 -->
-      <div class="navbar-nav mr-auto py-0">
-        <!-- <a href="#home" class="nav-item nav-link">U 체크인</a> -->
-        <a href="#about" class="nav-item nav-link">서비스 소개</a>
-        <a href="#service" class="nav-item nav-link">제공 서비스</a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active text-blue" aria-current="page" href="#about">U체크인 소개</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-blue" href="#service">U체크인과 함께</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-blue" href="#service_flow">U체크인 이용방법</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-blue" href="#project_gallery">사진첩</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-blue" href="#faqs">자주하는 질문</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-blue" href="#testimonial">고객사</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-blue" href="#contact">문의 및 제안</a>
+        </li>
+      </ul>
 
-        <a href="#service_flow" class="nav-item nav-link">서비스 이용 방법</a>
-        <a href="#project_gallery" class="nav-item nav-link">갤러리</a>
-        <a href="#faqs" class="nav-item nav-link">자주하는 질문</a>
-        <a href="#testimonial" class="nav-item nav-link">고객의 소리</a> 
-        <a href="#contact" class="nav-item nav-link">문의</a>
-      </div>
     </div>
   </nav>
-  <!-- Navbar End -->
+  <!--	JK_E NavBar 23.05.19 Ref.Bootstrap-->
 
   <!-- HEADING(HOME) Start -->
-  <div class="container-fluid p-0 mb-5 pb-5" id="home">
+  <!-- JK ADD style = margin-top, 상단 Bar -->
+  <div class="container-fluid p-0 mb-5 pb-5" id="home" >
     <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
       <div class="carousel-inner">
         <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-          <img class="position-absolute w-100 h-100" src="./img/ucheck/castle_1920.jpg" style="object-fit: cover;">
-            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-              <div class="p-3" style="max-width: 900px;">
-                <!-- <h1 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">U체크인</h1>
-                <h3 class="display-2 font-secondary text-white mb-4">당신의 현관문을 <br> 안전하게 열어줍니다</h3> -->
-                <h1 class="display-1 font-secondary text-white mb-4" style="letter-spacing: 3px;">U 체크인</h1>
-                <h4 class="display-4 font-secondary text-white mb-4">당신의 현관문을 <br> 안전하게 열어줍니다</h4>
-                <!-- <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Contact Us</a> -->
-              </div>
+          <img class="position-absolute w-100 h-100" src="./img/ucheck/main_head_key_2.jpg" style="object-fit: cover;">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px;">
+              <h1 class="display-1 text-white mb-4 font-weight-bold">U체크인</h1>
+              <h1 class="display-2 text-white mb-4">당신의 현관문을 <br> 안전하게 열어줍니다</h1>
             </div>
+          </div>
         </div>
         <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-            <img class="position-absolute w-100 h-100" src="./img/ucheck/family_vacation_1920.jpg" style="object-fit: cover;">
-              <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div class="p-3" style="max-width: 900px;">
-                  <!-- <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">U체크인</h4>
-                  <h3 class="display-2 font-secondary text-white mb-4">안심하실 수 있습니다</h3> -->
-
-                  <h1 class="display-1 font-secondary text-white mb-4" style="letter-spacing: 3px;">U 체크인</h1>
-                  <h4 class="display-4 font-secondary text-white mb-4">안심하실 수 있습니다</h4>
-                  <!-- <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Contact Us</a> -->
-                </div>
-              </div>
-        </div>
-
-        </div>
-          <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
-            <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
-              <span class="carousel-control-prev-icon mt-3"></span>
-            </div>
-          </a>
-          <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
-            <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
-              <span class="carousel-control-next-icon mt-3"></span>
-            </div>
-          </a>
-        </div>
-    </div>
-    <!-- HEADING(HOME) End -->
-
-    <!-- 서비스 소개(about) Start -->
-    <div class="container-fluid py-5" id="about">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <!-- <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpg" alt=""> -->
-                    <img class="img-fluid mb-4 mb-lg-0" src="./img/ucheck/ucheck_about.png" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h5 class="text-uppercase text-primary mb-3" style="font-weight: 700;">U체크인이란?</h5>
-                    <!-- 23.05.08 Change display-4 -> display-5 -->
-                    <h1 class="display-5 mb-3"><span class="text-primary">U체크인</span>은 바쁜 일상 다양한 가정 방문 상황에 안전한 출입 시스템을 제공합니다</h1>
-                    <p>- 비밀번호를 공유하지 않아도 됩니다.. <br>
-                    - 현재 이용중인 디지털 도어락 교체없이 그대로 이용 가능합니다. <br>
-                    - 원하는 시간에 확인된 방문자만 출입이 가능합니다. <br>
-                    - 스마트 키 하나로 도어락을 열 수 있습니다. <br>
-                    <span style="color:rgb(226, 224, 224); font-style: italic;">- 방문자/출입관리(시간,횟수) 등을 앱을 통해 확인할 수 있습니다.(서비스 예정)</span></p>
-                    <a class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#exampleModalLong">자세히</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-    <!-- 제공 서비스(Service) Start -->
-    <div class="container-fluid py-5" id="service">
-      <div class="container py-5">
-        <div class="section-title position-relative text-center">
-          <!-- <h5 class="text-uppercase text-primary mb-3" style="font-weight: 700;">제공 서비스</h5> -->
-          <!-- <h1 class="font-secondary display-4">U체크인과 함께하는 분야</h1> -->
-          <h2 class="text-uppercase text-primary mb-3" style="font-weight:700">U체크인과 함께하는 분야</h2>  
-        </div>
-        <div class="row">
-
-          <div class="col-lg-4 mb-3">
-            <div class="product-item mb-2">
-              <div class="product-img">
-                <img class="img-fluid" src="./img/ucheck/hospice-_1920.jpg" alt="">
-                <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong_hospice">
-                  <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-              </div>
-              <div class="bg-secondary text-center p-4">
-                <h3 class="m-0">복지 사업</h3>
-              </div>
+          <img class="position-absolute w-100 h-100" src="./img/ucheck/119_door_open_1.jpg" style="object-fit: cover;">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px;">
+              <h1 class="display-1 text-white mb-4 font-weight-bold">U체크인</h1>
+              <h1 class="display-2 text-white mb-4">위급 상황에 빠르게 <br> 현관문을 열 수 있습니다</h1>
             </div>
           </div>
-
-          <div class="col-lg-4 mb-3">
-            <div class="product-item mb-2">
-              <div class="product-img">
-                <img class="img-fluid" src="./img/ucheck/pet_care_1920.jpg" alt="">
-                <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong_pet">
-                  <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-              </div>
-              <div class="bg-secondary text-center p-4">
-                <h3 class="m-0">펫케어 서비스</h3>
-             </div>
+        </div>
+        <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+          <img class="position-absolute w-100 h-100" src="./img/ucheck/family_vacation_1920.jpg" style="object-fit: cover;">
+          <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+            <div class="p-3" style="max-width: 900px;">
+              <h1 class="display-1 text-white mb-4 font-weight-bold">U체크인</h1>
+              <h1 class="display-2 text-white mb-4">안심하실 수 있습니다</h1>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="col-lg-4 mb-3">
-            <div class="product-item mb-2">
-              <div class="product-img">
-                <img class="img-fluid" src="./img/ucheck/hy_freshmanagerjpg.jpg" alt="">
-                <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong_fresh">
-                  <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-              </div>
-              <div class="bg-secondary text-center p-4">
-                <h3 class="m-0">신선식품 배송</h3>
-              </div>
-            </div>
-          </div>          
+      <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+        <div class="btn btn-primary px-0" style="width:84px; height:84px;">
+          <span class="carousel-control-prev-icon mt-3"></span>
+        </div>
+      </a>
+      <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+        <div class="btn btn-primary px-0" style="width:84px; height:84px;">
+          <span class="carousel-control-next-icon mt-3"></span>
+        </div>
+      </a>
+    </div>
+  </div>
+  <!-- HEADING(HOME) End -->
 
+  <!-- 서비스 소개(about) Start -->
+  <!--  py-5 -> py-3-->
+  <div class="container-fluid py-3" id="about">
+    <div class="container py-5">
+      <div class="section-title position-relative text-center">
+        <h1 class="text-uppercase text-primary mb-5" style="font-weight:700">U체크인 소개</h1>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-5">  <!-- flex: 0 0 41.66667% -->
+          <img class="img-fluid mb-4 mb-lg-0" src="./img/ucheck/ucheck_about.png" alt="">
+        </div>
+        <div class="col-lg-7">
+          <h1 class="display-5 mb-3"><span class="text-primary">U체크인</span>은 바쁜 일상 <br> 다양한 가정 방문 상황에 안전한 출입 시스템을 제공합니다</h1>
+          <p>- 고객님댁의 현관 비밀번호를 공유하지 않아도 됩니다.. <br>
+            - 현재 이용중인 디지털 도어락을 교체없이 그대로 이용 가능합니다. <br>
+            - 원하는 날짜&시간에 확인된 방문자만 출입이 가능합니다. <br>
+            - 스마트 키 하나로 도어락을 열 수 있습니다. <br>
+          <span style="color:rgb(226, 224, 224); font-style: italic;">- 방문자/출입관리(시간,횟수) 등을 앱을 통해 확인할 수 있습니다.(서비스 예정)</span></p>
+          <a class="btn btn-primary fw-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#exampleModalLong">자세히</a>
         </div>
       </div>
     </div>
-    <!-- Service End -->
+  </div>
+  <!-- About End -->
+
+  <!-- 제공 서비스(Service) Start -->
+  <div class="container-fluid py-5" id="service">
+    <div class="container py-5">
+      <div class="section-title position-relative text-center">
+        <!-- <h5 class="text-uppercase text-primary mb-3" style="font-weight: 700;">제공 서비스</h5> -->
+        <!-- <h1 class="font-secondary display-4">U체크인과 함께하는 분야</h1> -->
+        <h1 class="text-uppercase text-primary mb-5" style="font-weight:700">U체크인과 함께하는 분야</h1>
+      </div>
+      <div class="row">
+
+<!--          col-lg-auto : auto-->
+<!--          col-lg-1 : 8.3%-->
+<!--          col-lg-2 : 16.67%-->
+<!--          col-lg-3 : 25%-->
+<!--          col-lg-4 : 33.33%-->
+<!--          col-lg-5 : 41.67%-->
+<!--          col-lg-6 : 50%-->
+
+        <div class="col-lg-4 mb-3">
+          <div class="product-item mb-2">
+            <div class="product-img">
+              <img class="img-fluid" src="./img/ucheck/hospice-_1920.jpg" style="border-radius : 10px" alt="">
+              <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong_hospice">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="text-center p-4">
+              <h4 class="m-0">복지 사업</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="product-item mb-2">
+            <div class="product-img">
+              <img class="img-fluid" src="./img/ucheck/pet_care_1920.jpg" style="border-radius : 10px;" alt="">
+              <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong_pet">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="text-center p-4">
+              <h4 class="m-0">펫케어 서비스</h4>
+           </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mb-3">
+          <div class="product-item mb-2">
+            <div class="product-img">
+              <img class="img-fluid" src="./img/ucheck/hy_freshmanagerjpg.jpg" style="border-radius : 10px" alt="">
+              <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong_fresh">
+                <i class="fa fa-2x fa-plus text-white"></i>
+              </a>
+            </div>
+            <div class="text-center p-4">
+              <h4 class="m-0">신선식품 배송</h4>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
 
     <!-- service_flow Start -->
     <!-- 안심 비대면 Flow 소개 -->
-    <div class="container-fluid py-5" id="service_flow">
-      <div class="container py-5">
-        <div class="section-title position-relative text-center">
-          <!-- <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Service Flow</h6> -->
-          <!-- <h1 class="font-secondary display-4">U체크인 Service 순서</h1> -->
-          <h2 class="text-uppercase text-primary mb-3" style="font-weight:700">U체크인 이용방법</h2>                    
-        </div>
-        
-        <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
-          <div class="col-lg-6 p-0">
-            <div class="row m-0">
-              <div class="col-sm-6 p-0 text-center">
-                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
-                  <h5 class="mb-2">방문 스켸쥴 확인</h5>
-                  <p class="text-muted font-italic mb-2">매니저앱 실행</p>
-                  <p>매니저앱을 실행하여 당일 업무 스켸쥴을 확인</p>
-                  <div class="position-relative mb-2">
-                    <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a> -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 p-0" style="min-height: 300px;">
-                <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_01.png" style="object-fit: cover;">
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="row justify-content-lg-end m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
-          <div class="col-lg-6 p-0">
-            <div class="row m-0">
-              <div class="col-sm-6 p-0" style="min-height: 300px;">
-                <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_02.png" style="object-fit: cover;">
-              </div>
-              <div class="col-sm-6 p-0 text-center">
-                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
-                  <h5 class="mb-2">스마트키 연결</h5>
-                  <p class="text-muted font-italic mb-2">단말기와 스마트키간 연결</p>
-                  <p>당일 업무 스켸쥴 확인 후 고객댁앞에서 단말기와 스마트키간 연결 진행</p>
-                  <div class="position-relative mb-2">
-                    <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
-          <div class="col-lg-6 p-0">
-            <div class="row m-0">
-              <div class="col-sm-6 p-0 text-center">
-                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
-                  <h5 class="mb-2">스마트키 동작 확인</h5>
-                  <p class="text-muted font-italic mb-2">스마트키 정상 동작 확인 유무 파악</p>
-                  <p>스마트키가 정상 동작하는지 확인</p>
-                  <div class="position-relative mb-2">
-                    <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a> -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 p-0" style="min-height: 300px;">
-                <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_03.png" style="object-fit: cover;">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row justify-content-lg-end m-0">
-          <div class="col-lg-6 p-0">
-            <div class="row m-0">
-              <div class="col-sm-6 p-0" style="min-height: 300px;">
-                <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_04.png" style="object-fit: cover;">
-              </div>
-              <div class="col-sm-6 p-0 text-center">
-                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
-                  <h5 class="mb-2">현관문 열기</h5>
-                  <p class="text-muted font-italic mb-2">스마트키 사용</p>
-                  <p>매니저앱에서 현관문 열기 실행 후 스마트키를 디지털 도어락 카드키 표시부분에 가져다 대기</p>
-                  <div class="position-relative mb-2">
-                    <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+<!--    고객 서비스 신청에서 매니저 방문 서비스 완료까지 -->
 
-        <!-- JK Add -->
-        <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
-          <div class="col-lg-6 p-0">
-            <div class="row m-0">
-              <div class="col-sm-6 p-0 text-center">
-                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
-                  <h5 class="mb-2">현관문 열림 확인</h5>
-                  <p class="text-muted font-italic mb-2">현관문 열림</p>
-                  <p>스마트키로 현관문 열림 정상 확인</p>
-                  <div class="position-relative mb-2">
-                    <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a> -->
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6 p-0" style="min-height: 300px;">
-                <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_05.png" style="object-fit: cover;">
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="row justify-content-lg-end m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
-          <div class="col-lg-6 p-0">
-            <div class="row m-0">
-              <div class="col-sm-6 p-0" style="min-height: 300px;">
-                <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_06.png" style="object-fit: cover;">
-              </div>
-              <div class="col-sm-6 p-0 text-center">
-                <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4">
-                  <h5 class="mb-2">업무 진행 및 현관문 닫기</h5>
-                  <p class="text-muted font-italic mb-2">매니저앱</p>
-                  <p>업무 진행 완료 후 현관문 정상적으로 닫혔는지 확인 후 매니저앱에서 업무 완료 처리</p>
-                  <div class="position-relative mb-2">
-                    <!-- <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-primary btn-square mr-1" href="#"><i class="fab fa-linkedin-in"></i></a> -->
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- JK Add -->
+  <div class="container-fluid py-5" id="service_flow">
+    <div class="container py-5">
+      <div class="section-title position-relative text-center">
+        <h1 class="text-uppercase text-primary mb-5" style="font-weight:700">U체크인 이용방법</h1>
+      </div>
 
+      <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+        <div class="col-lg-6 p-0"> <!-- col-lg-6: 0 0 50% -->
+          <div class="row m-0">
+            <div class="col-sm-6 p-0 text-center">
+              <div class="h-100 d-flex flex-column justify-content-center text-bg-light p-4">
+                <h5 class="mb-2">방문 스켸쥴 확인</h5>
+                <p class="text-secondary fst-italic mb-2">매니저앱 실행</p>
+                <p>매니저앱을 실행하여 당일 업무 스켸쥴을 확인</p>
+              </div>
+            </div>
+            <div class="col-sm-6 p-0" style="min-height: 300px;">
+              <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_01.png" style="object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-lg-end m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+        <div class="col-lg-6 p-0">
+          <div class="row m-0">
+            <div class="col-sm-6 p-0" style="min-height: 300px;">
+              <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_02.png" style="object-fit: cover;">
+            </div>
+            <div class="col-sm-6 p-0 text-center">
+              <div class="h-100 d-flex flex-column justify-content-center text-bg-light p-4">
+                <h5 class="mb-2">스마트키 연결</h5>
+                <p class="text-secondary fst-italic mb-2">단말기와 스마트키간 연결</p>
+                <p>당일 업무 스켸쥴 확인 후 고객댁앞에서 단말기와 스마트키간 연결 진행</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+        <div class="col-lg-6 p-0">
+          <div class="row m-0">
+            <div class="col-sm-6 p-0 text-center">
+              <div class="h-100 d-flex flex-column justify-content-center text-bg-light p-4">
+                <h5 class="mb-2">스마트키 동작 확인</h5>
+                <p class="text-secondary fst-italic mb-2">스마트키 정상 동작 확인 유무 파악</p>
+                <p>스마트키가 정상 동작하는지 확인</p>
+              </div>
+            </div>
+            <div class="col-sm-6 p-0" style="min-height: 300px;">
+              <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_03.png" style="object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-lg-end m-0">
+        <div class="col-lg-6 p-0">
+          <div class="row m-0">
+            <div class="col-sm-6 p-0" style="min-height: 300px;">
+              <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_04.png" style="object-fit: cover;">
+            </div>
+            <div class="col-sm-6 p-0 text-center">
+              <div class="h-100 d-flex flex-column justify-content-center text-bg-light p-4">
+                <h5 class="mb-2">현관문 열기</h5>
+                <p class="text-secondary fst-italic mb-2">스마트키 사용</p>
+                <p>매니저앱에서 현관문 열기 실행 후 스마트키를 디지털 도어락 카드키 표시부분에 가져다 대기</p>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JK Add -->
+      <div class="row justify-content-lg-start m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+        <div class="col-lg-6 p-0">
+          <div class="row m-0">
+            <div class="col-sm-6 p-0 text-center">
+              <div class="h-100 d-flex flex-column justify-content-center text-bg-light p-4">
+                <h5 class="mb-2">현관문 열림 확인</h5>
+                <p class="text-secondary fst-italic mb-2">현관문 열림</p>
+                <p>스마트키로 현관문 열림 정상 확인</p>
+              </div>
+            </div>
+            <div class="col-sm-6 p-0" style="min-height: 300px;">
+              <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_05.png" style="object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-lg-end m-0 mb-4 pb-2 mb-sm-0 pb-sm-0">
+        <div class="col-lg-6 p-0">
+          <div class="row m-0">
+            <div class="col-sm-6 p-0" style="min-height: 300px;">
+              <img class="position-absolute w-100 h-100" src="./img/ucheck/service_flow_06.png" style="object-fit: cover;">
+            </div>
+            <div class="col-sm-6 p-0 text-center">
+              <div class="h-100 d-flex flex-column justify-content-center text-bg-light p-4">
+                <h5 class="mb-2">업무 진행 및 현관문 닫기</h5>
+                <p class="text-secondary fst-italic mb-2">매니저앱</p>
+                <p>업무 진행 완료 후 현관문 정상적으로 닫혔는지 확인 후 매니저앱에서 업무 완료 처리</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- JK Add -->
+    </div>
+  </div>
+  <!-- service_flow End -->
+
+  <!-- Gallery Start -->
+  <div class="container-fluid bg-gallery" id="project_gallery" style="padding: 120px 0; margin: 90px 0;">
+    <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
+      <!-- <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">project_gallery</h6> -->
+      <!-- <h1 class="font-secondary display-4 text-white">Pilot Service Gallery</h1> -->
+      <h1 class="text-uppercase text-primary mb-5" style="font-weight:700">사진첩</h1>
+    </div>
+
+    <div class="owl-carousel gallery-carousel">
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/gosan_01.JPG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/gosan_01.JPG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+      </div>
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/gosan_02.JPG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/gosan_02.JPG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+      </div>
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/gosan_03.PNG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/gosan_03.PNG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+      </div>
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/gosan_04.PNG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/gosan_04.PNG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+      </div>
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/gosan_05.PNG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/gosan_05.PNG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+      </div>
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/gosan_06.PNG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/gosan_06.PNG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+      </div>
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/gosan_07.JPG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/gosan_07.JPG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+      </div>
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/gosan_08.JPG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/gosan_08.JPG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+      </div>
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/hicare_01.JPG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/hicare_01.JPG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
+      </div>
+      <div class="gallery-item">
+          <img class="img-fluid w-100" src="./img/ucheck/hicare_02.JPG" alt="">
+          <a class="btn btn-primary" href="./img/ucheck/hicare_02.JPG" data-lightbox="gallery">
+              <i class="fa fa-2x fa-plus text-white"></i>
+          </a>
       </div>
     </div>
-    <!-- service_flow End -->
+  </div>
+  <!-- Gallery End -->
 
-    <!-- Gallery Start -->
-    <div class="container-fluid bg-gallery" id="project_gallery" style="padding: 120px 0; margin: 90px 0;">
+  <!-- FAQs Start -->
+  <div class="container-fluid py-5" id="faqs">
+    <div class="container py-5">
+      <div class="section-title position-relative text-center">
+        <h2 class="text-uppercase text-primary mb-3" style="font-weight:700">자주하는 질문</h2>
+      </div>
+      <!-- S_JK Change Divide to light text 23.05.09 -->
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+            <img class="img-fluid mb-4 mb-lg-0" src="./img/ucheck/faq-685060_1280.jpg" alt="">
+        </div>
+        <div class="col-lg-7">
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="font-size:20px; padding:8px 20px;">
+                  U체크인 서비스는 무엇인가요?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                <p class="text-sm-start mb-0">- 어르신이 신청하신 경우, 보훈처의 관리 및 승인하에 실무관에게 LG 유플러스 시스템으로
+                    문을 열어주는 서비스입니다. 허락된 실무관만 정해진 시간내에만 문을 열수 있으므로 안심하셔도 됩니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseTwo" style="font-size:20px; padding:8px 20px;">
+                  U체크인 서비스를 신청하면 좋은 점은 무엇인가요?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p class="text-sm-start mb-0">- 긴급한 상황 발생시 빠르게 도움을 드릴 수 있습니다.</p>
+                  <p class="text-sm-start mb-0">- 거동이 불편하신 경우, 문을 열어주셔야 하는 번거로움을 덜어드릴 수 있습니다.</p>
+                  <p class="text-sm-start mb-0">- 보호자에게 문열림 정보가 공유되어 안심하실 수 있습니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree" style="font-size:20px; padding:8px 20px;">
+                  실무관이 어떻게 집에 들어오는 건가요?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p class="text-sm-start mb-0">- 실무관의 휴대폰을 이용하여 미리 방문 약속된 일정에만 LG 유플러스의 시스템을 통해 문이 열리게 됩니다.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="true" aria-controls="panelsStayOpen-collapseFour" style="font-size:20px; padding:8px 20px;">
+                  약속된 일정을 변경하거나 취소하려면 어떻게 하나요?
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <p class="text-sm-start mb-0">- 담당 실무관 또는 복지사께 연락하시면 됩니다.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- E_JK Change Divide to light text 23.05.09 -->
+    </div>
+  </div>
+  <!-- FAQs End -->
+
+  <!-- 고객사 Start -->
+  <div class="container-fluid py-5" id="testimonial">
+    <div class="container py-5">
       <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-        <!-- <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">project_gallery</h6> -->
-        <!-- <h1 class="font-secondary display-4 text-white">Pilot Service Gallery</h1> -->
-        <h2 class="text-uppercase text-primary mb-3" style="font-weight:700">사진첩</h2>            
+        <!-- <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">고객사</h6> -->
+        <h2 class="text-uppercase text-primary mb-3" style="font-weight:700">고객사</h2>
+        <!-- <h1 class="display-4">고객의 소리</h1> -->
       </div>
-      
-      <div class="owl-carousel gallery-carousel">
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/gosan_01.JPG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/gosan_01.JPG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/gosan_02.JPG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/gosan_02.JPG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/gosan_03.PNG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/gosan_03.PNG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/gosan_04.PNG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/gosan_04.PNG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/gosan_05.PNG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/gosan_05.PNG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div> 
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/gosan_06.PNG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/gosan_06.PNG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/gosan_07.JPG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/gosan_07.JPG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/gosan_08.JPG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/gosan_08.JPG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/hicare_01.JPG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/hicare_01.JPG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-            <div class="gallery-item">
-                <img class="img-fluid w-100" src="./img/ucheck/hicare_02.JPG" alt="">
-                <a class="btn btn-primary" href="./img/ucheck/hicare_02.JPG" data-lightbox="gallery">
-                    <i class="fa fa-2x fa-plus text-white"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!-- Gallery End -->
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="owl-carousel testimonial-carousel">
 
-    <!-- FAQs Start -->
-    <div class="container-fluid py-5" id="faqs">
-      <div class="container py-5">
-        <div class="section-title position-relative text-center">
-          <h2 class="text-uppercase text-primary mb-3" style="font-weight:700">자주하는 질문</h2>
-        </div>
-        <!-- S_JK Change Divide to light text 23.05.09 -->
-        <div class="row align-items-center">
-          <div class="col-lg-5">
-              <img class="img-fluid mb-4 mb-lg-0" src="./img/ucheck/faq-685060_1280.jpg" alt="">
-          </div>
-          <div class="col-lg-7">
-            <h5 class="text-uppercase text-primary mb-3" style="font-weight: 700;">U체크인 서비스는 무엇인가요?</h5>
-            <p>- 어르신이 신청하신 경우, 보훈처의 관리 및 승인하에
-              실무관에게 LG 유플러스 시스템으로 문을 열어주는 서비스입니다. 
-              허락된 실무관만 정해진 시간내에만 문을 열수 있으므로 안심하셔도 됩니다.</p>
+            <!-- 고객사 1. 도그메이트 -->
+            <div class="text-center">
+              <img class="img-fluid mx-auto mb-3" src="./img/ucheck/dogmate_1.png" style="width: 200px;">
+              <p style="font-size: 22px;">2022년 11월부터 U체크인 서비스 진행 중</p>
+              <h4>최아무개님</h4>
+              <span>도그메이트 이용고객</span>
+            </div>
 
-            <h5 class="text-uppercase text-primary mb-3" style="font-weight: 700;">U체크인 서비스를 신청하면 좋은 점은 무엇인가요?</h5>
-            <p>- 긴급한 상황 발생시 빠르게 도움을 드릴 수 있습니다.<br> 
-              - 거동이 불편하신 경우, 문을 열어주셔야 하는 번거로움을 덜어드릴 수 있습니다.<br>
-              - 보호자에게 문열림 정보가 공유되어 안심하실 수 있습니다.</p>                
+            <!-- 고객사 2. 고산종합사회복지관 -->
+            <div class="text-center">
+              <img class="img-fluid mx-auto mb-3" src="./img/ucheck/gosan_1.png" style="width: 200px;">
+              <p style="font-size: 22px;">2022년 10월부터 U체크인 서비스 진행 중</p>
+              <h4>의정부 고산종합사회복지관</h4>
+              <span>test</span>
+            </div>
 
-            <h5 class="text-uppercase text-primary mb-3" style="font-weight: 700;">실무관이 어떻게 집에 들어오는 건가요?</h5>
-            <p>- 실무관의 휴대폰을 이용하여 미리 방문 약속된 일정에만 LG 유플러스의 스스템을 통해 문이 열리게 됩니다.</p>    
+            <!-- 고객사 3. 보훈처 -->
+            <div class="text-center">
+              <img class="img-fluid mx-auto mb-3" src="./img/ucheck/bohun_2.jpg" style="width: 200px;">
+              <p style="font-size: 22px;">2023년 6월 서울지역 파일럿 테스트 진행 예정</p>
+              <h4>국가보훈처</h4>
+              <span>test</span>
+            </div>
 
-            <h5 class="text-uppercase text-primary mb-3" style="font-weight: 700;">약속된 일정을 변경하거나 취소하려면 어떻게 하나요?</h5>
-            <p>- 담당 실무관 또는 복지사께 연락하시면 됩니다.</p>                        
+            <!-- 고객사 4. TBD -->
+            <div class="text-center">
+              <img class="img-fluid mx-auto mb-3" src="./img/ucheck/coupang_1.png" style="width: 200px;">
+              <p style="font-size: 22px;">추후 진행 예정</p>
+              <h4>쿠팡</h4>
+              <span>test</span>
+            </div>
+
+            <!-- 고객사 5. TBD -->
+            <div class="text-center">
+              <img class="img-fluid mx-auto mb-3" src="./img/ucheck/cleanlab.png" style="width: 200px;">
+              <p style="font-size: 22px;">추후 진행 예정</p>
+              <h4>청소연구소</h4>
+              <span>test</span>
+            </div>
 
           </div>
         </div>
-        <!-- E_JK Change Divide to light text 23.05.09 -->    
-        
-        <!-- Original -->
-        <!-- <div div class="row">
-          <div class="col-md-6 border-right border-primary">
-            <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
-              <h3 class="mb-4">U체크인 서비스는 무엇인가요?</h3>
-              <h6 class="mb-3"><i class="fa fa-check text-success mr-2"></i>어르신이 신청하신 경우, 보훈처의 관리 및 승인하에
-              실무관에게 LG 유플러스 시스템으로 문을 열어주는 서비스입니다.<br> 
-              허락된 실무관만 정해진 시간내에만 문을 열수 있으므로 안심하셔도 됩니다.</h6>
-
-              <h3 class="mb-4">U체크인 서비스를 신청하면 좋은 점은 무엇인가요?</h3>
-              <h6 class="mb-3"><i class="fa fa-check text-success mr-2"></i>긴급한 상황 발생시 빠르게 도움을 드릴 수 있습니다.</h6>
-              <h6 class="mb-3"><i class="fa fa-check text-success mr-2"></i>거동이 불편하신 경우, 문을 열어주셔야 하는 번거로움을 덜어드릴 수 있습니다.</h6>
-              <h6 class="mb-3"><i class="fa fa-check text-success mr-2"></i>보호자에게 문열림 정보가 공유되어 안심하실 수 있습니다.</h6>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="text-center text-md-left ml-md-3">
-              <h3 class="mb-4">실무관이 어떻게 집에 들어오는 건가요?</h3>
-              <h6 class="mb-3"><i class="fa fa-check text-success mr-2"></i>실무관의 휴대폰을 이용하여 미리 방문 약속된 일정에만 LG 유플러스의 스스템을 통해 문이 열리게 됩니다.</h6>
-              <h3 class="mb-4">약속된 일정을 변경하거나 취소하려면 어떻게 하나요?</h3>
-              <h6 class="mb-3"><i class="fa fa-check text-success mr-2"></i>담당 실무관 또는 복지사께 연락하시면 됩니다.</h6>
-            </div>
-          </div>
-          <div class="col-md-12 text-center pt-3">
-            <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4 btn-scroll" href="#contact">Get A Quote</a>
-          </div>
-        </div> -->
       </div>
     </div>
-    <!-- FAQs End -->
+  </div>
+  <!-- Testimonial End -->
 
-    <!-- 고객사 Start -->
-    <div class="container-fluid py-5" id="testimonial">
-      <div class="container py-5">
-        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-          <!-- <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">고객사</h6> -->
-          <h2 class="text-uppercase text-primary mb-3" style="font-weight:700">고객사</h2>
-          <!-- <h1 class="display-4">고객의 소리</h1> -->
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="owl-carousel testimonial-carousel">
-
-              <!-- 고객사 1. 도그메이트 -->
+  <!-- Contact Start -->
+  <div class="container-fluid py-5" id="contact">
+    <div class="container py-5">
+      <div class="section-title position-relative text-center">
+        <h2 class="text-uppercase text-primary mb-3" style="font-weight:700">문의 및 제안</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-form">
+            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+              <div class="form-row">
+                <div class="col-sm-6 control-group">
+                  <input type="text" class="form-control bg-light border-0" id="name" placeholder="이름" required="required" data-validation-required-message="Please enter your name" />
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="col-sm-6 control-group">
+                  <input type="email" class="form-control bg-light border-0" id="email" placeholder="이메일 주소" required="required" data-validation-required-message="Please enter your email" />
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+                <div class="control-group">
+                  <input type="text" class="form-control bg-light border-0" id="subject" placeholder="제목" required="required" data-validation-required-message="Please enter a subject" />
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="control-group">
+                  <textarea class="form-control bg-light border-0 py-2 px-3" rows="6" id="message" placeholder="내용" required="required" data-validation-required-message="Please enter your message"></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
               <div class="text-center">
-                <img class="img-fluid mx-auto mb-3" src="./img/ucheck/dogmate_1.png" style="width: 200px;">
-                <p style="font-size: 22px;">2022년 11월부터 U체크인 서비스 진행 중</p>
-                <h4>최아무개님</h4>
-                <span>도그메이트 이용고객</span>
+                <button class="btn btn-primary fw-bold py-3 px-5" type="submit" id="sendMessageButton">메시지 보내기</button>
               </div>
-
-              <!-- 고객사 2. 고산종합사회복지관 -->
-              <div class="text-center">
-                <img class="img-fluid mx-auto mb-3" src="./img/ucheck/gosan_1.png" style="width: 200px;">
-                <p style="font-size: 22px;">2022년 10월부터 U체크인 서비스 진행 중</p>
-                <h4>의정부 고산종합사회복지관</h4>
-                <span>test</span>
-              </div>
-
-              <!-- 고객사 3. 보훈처 -->
-              <div class="text-center">
-                <img class="img-fluid mx-auto mb-3" src="./img/ucheck/bohun_2.jpg" style="width: 200px;">
-                <p style="font-size: 22px;">2023년 6월 서울지역 파일럿 테스트 진행 예정</p>
-                <h4>국가보훈처</h4>
-                <span>test</span>
-              </div>
-
-              <!-- 고객사 4. TBD -->
-              <div class="text-center">
-                <img class="img-fluid mx-auto mb-3" src="./img/ucheck/coupang_1.png" style="width: 200px;">
-                <p style="font-size: 22px;">추후 진행 예정</p>
-                <h4>쿠팡</h4>
-                <span>test</span>
-              </div>
-
-              <!-- 고객사 5. TBD -->
-              <div class="text-center">
-                <img class="img-fluid mx-auto mb-3" src="./img/ucheck/cleanlab.png" style="width: 200px;">
-                <p style="font-size: 22px;">추후 진행 예정</p>
-                <h4>청소연구소</h4>
-                <span>test</span>
-              </div>
-
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <!-- Testimonial End -->
+  </div>
+  <!-- Contact End -->
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-      <div class="container py-5">
-        <div class="section-title position-relative text-center">
-          <!-- <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">문의</h6> -->
-          <h2 class="text-uppercase text-primary mb-3" style="font-weight:700">문의 및 제안</h2>
-          <!-- <h1 class="font-secondary display-4">문의하기</h1> -->
-          <!-- <h1>문의하기</h1> -->
-      </div>
-        <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <div class="contact-form">
-              <!-- <div id="success">
-
-              </div> -->
-              <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                <div class="form-row">
-                  <div class="col-sm-6 control-group">
-                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="name" placeholder="이름" required="required" data-validation-required-message="Please enter your name" />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="col-sm-6 control-group">
-                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" id="email" placeholder="이메일 주소" required="required" data-validation-required-message="Please enter your email" />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                </div>
-                  <div class="control-group">
-                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="subject" placeholder="제목" required="required" data-validation-required-message="Please enter a subject" />
-                    <p class="help-block text-danger"></p>
-                  </div>
-                  <div class="control-group">
-                    <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="6" id="message" placeholder="내용" required="required" data-validation-required-message="Please enter your message"></textarea>
-                    <p class="help-block text-danger"></p>
-                  </div>
-                <div class="text-center">
-                  <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">메시지 보내기</button>
-                </div>
-              </form>
-            </div>
-          </div>
+  <!--  To-Do-->
+  <!-- Modal for About Us Pop Up Page -->
+  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">U체크인이란</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt=""> -->
+          <!-- 적당한 이미지 넣기 -->
+          <img class="img-fluid mb-4" src="./img/ucheck/intro_01.JPG" alt="">
+          <h2>U체크인 서비스란? </h2>
+          <p>U체크인은 LG 유플러스의 서비스로,<br>
+            <span style="color:blue">① 어른신이 허락해 주시는 경우</span> 또는
+            <span style="color:blue">② 긴급한 상황이 발생했을 경우</span> 복지사님의 관리하에 문을 열어주는 서비스입니다.</p>
+          <p> 블라블라....</p>
+          <p style="font-size:14px;">1. 고객 요청한 서비스의 방문자만 출입이 가능합니다.</p>
+          <p style="font-size:14px;">2. 방문자는 신원 확인된 제휴 업체 인력입니다.</p>
+          <p style="font-size:14px;">3. 예약된 일정에 'U 체크인'이 방문자에게 문을 열어주고 출입을 관리합니다.</p>
         </div>
       </div>
     </div>
-    <!-- Contact End -->
+  </div>
+  <!-- Modal -->
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5">    <!-- 190px -->
-      <div class="row pt-5">
-        <!-- footer 상단  -->
-        <div class="col-12 mb-4 px-4">
-          <!-- <div class="row mb-5 p-4" style="background: rgba(256, 256, 256, .05);"> : Original -->
-          <div class="row mb-5 p-4">  <!-- Inner Background Color 제거-->
-              <div class="col-md-4">
-              <div class="text-md-center">
-                <!-- <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Our Office</h5> -->
-                <h5 class="text-primary">Our Office</h5>
-                <p class="mb-4 m-md-0">서울특별시 중구 후암로 98</p>
-                <h5 class="text-primary text-uppercase mb-2"><br>사업자 등록 번호</h5>
-                <p class="mb-4 m-md-0">1234567890</p>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="text-md-center">
-                <h5 class="text-primary">Email Us</h5>
-                <p class="mb-4 m-md-0">ucheckin@example.com</p>
-              </div>
-            </div>
-          <div class="col-md-4">
-            <div class="text-md-center">
-                <h5 class="text-primary">연락처</h5>
-                <p class="mb-4 m-md-0">010-1234-5678</p>
-                <h5 class="text-primary"><br>개인정보 책임자</h5>
-                <p class="mb-4 m-md-0">아무개님</p>
-              </div>
-            </div>
-          </div>
+  <!-- Modal for Service-hospice Pop Up Page -->
+  <div class="modal fade" id="exampleModalLong_hospice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle_b2g"
+       aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle_b2g">사회복지 분야</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-
-        <!-- <div class="col-lg-7 col-md-12">
-          <div class="row">
-            <div class="col-md-6 mb-5">
-              <p>사업자 등록 번호</p>
-              <div class="d-flex justify-content-start mt-4">
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
-              </div>
-            </div>
-            <div class="col-md-6 mb-5">
-              <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">U 체크인</h5>
-                <div class="d-flex flex-column justify-content-start">
-                  <a class="text-white btn-scroll mb-2" href="#service"><i class="fa fa-angle-right mr-2"></i>Solar System</a>
-                  <a class="text-white btn-scroll mb-2" href="#service"><i class="fa fa-angle-right mr-2"></i>Wind Turbine</a>
-                  <a class="text-white btn-scroll mb-2" href="#service"><i class="fa fa-angle-right mr-2"></i>Wind Generator</a>
-                  <a class="text-white btn-scroll mb-2" href="#service"><i class="fa fa-angle-right mr-2"></i>Solar Energy</a>
-                  <a class="text-white btn-scroll" href="#service"><i class="fa fa-angle-right mr-2"></i>Solar Panel</a>
-                </div>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- <div class="col-lg-5 col-md-12 mb-5">
-          <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">개인정보 책임자</h5>
-          <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
-          <div class="w-100">
-            <div class="input-group">
-              <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-              <div class="input-group-append">
-                <button class="btn btn-primary px-4">Sign Up</button>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-      </div>
-    </div>
-
-    <!-- <div class="container-fluid bg-dark text-white text-center border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .05) !important;"> -->
-    <div class="container-fluid bg-dark text-white text-center border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(45, 41, 38, 0.05) !important" >
-        <!-- <p class="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a></p> -->
-        <p class="m-0 text-white"><script>document.write( new Date().getFullYear() );</script> Copyright ⓒ LG Uplus Corp. All Rights Reserved.</p>
-    </div>
-    <!-- Footer End -->
-
-    <!-- Modal for About Us Pop Up Page -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLongTitle">U체크인이란</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-          </div>
-          <div class="modal-body">
-            <!-- <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt=""> -->
-            <!-- 적당한 이미지 넣기 -->
-            <img class="img-fluid mb-4" src="./img/ucheck/intro_01.JPG" alt="">
-            <h2>U체크인 서비스란? </h2>
-            <p>U체크인은 LG 유플러스의 서비스로,<br>
-              <span style="color:blue">① 어른신이 허락해 주시는 경우</span> 또는
-              <span style="color:blue">② 긴급한 상황이 발생했을 경우</span> 복지사님의 관리하에 문을 열어주는 서비스입니다.</p>
-            <p> 블라블라....</p>
-            <p style="font-size:14px;">1. 고객 요청한 서비스의 방문자만 출입이 가능합니다.</p>
-            <p style="font-size:14px;">2. 방문자는 신원 확인된 제휴 업체 인력입니다.</p>
-            <p style="font-size:14px;">3. 예약된 일정에 'U 체크인'이 방문자에게 문을 열어주고 출입을 관리합니다.</p>
-          </div>
+        <div class="modal-body">
+          <!-- <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt=""> -->
+          <img class="img-fluid mb-4" src="./img/ucheck/hospice-_1920.jpg" alt="">
+          <img class="img-fluid mb-4" src="./img/ucheck/care_call_1920.jpg" alt="">
+          <h2>사회복지 분야</h2>
+          <p>의정부 고산종합사회복지관과 협업하여 서비스 진행 중입니다.</p>
+          <p>거동이 불편하시거나 위급한 상황에 안전하게 문을 열어 도와드릴 수 있습니다.</p>
+          <p style="font-size:14px;">1. 방문자는 신원 확인된 제휴 업체 인력입니다.</p>
+          <p style="font-size:14px;">2. 예약된 일정에 'U 체크인'이 방문자에게 문을 열어주고 출입을 관리합니다.</p>
         </div>
       </div>
     </div>
-    <!-- Modal -->
+  </div>
+  <!-- Modal -->
 
-    <!-- Modal for Service-hospice Pop Up Page -->
-    <div class="modal fade" id="exampleModalLong_hospice" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-      aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">사회복지 분야</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt=""> -->
-                    <img class="img-fluid mb-4" src="./img/ucheck/hospice-_1920.jpg" alt="">
-                    <img class="img-fluid mb-4" src="./img/ucheck/care_call_1920.jpg" alt="">
-                    <h2>사회복지 분야</h2>
-                    <p>의정부 고산종합사회복지관과 협업하여 서비스 진행 중입니다.</p>
-                    <p>거동이 불편하시거나 위급한 상황에 안전하게 문을 열어 도와드릴 수 있습니다.</p>
-                    <p style="font-size:14px;">1. 방문자는 신원 확인된 제휴 업체 인력입니다.</p>
-                    <p style="font-size:14px;">2. 예약된 일정에 'U 체크인'이 방문자에게 문을 열어주고 출입을 관리합니다.</p>
-                </div>
-            </div>
+  <!-- Modal for Service-Pet Pop Up Page -->
+  <div class="modal fade" id="exampleModalLong_pet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle_pet"
+       aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle_pet">펫케어 서비스</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-    </div>
-    <!-- Modal -->
-
-    <!-- Modal for Service-Pet Pop Up Page -->
-    <div class="modal fade" id="exampleModalLong_pet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">펫케어 서비스</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt=""> -->
-                    <img class="img-fluid mb-4" src="./img/ucheck/dog_1920.jpg" alt="">
-                    <img class="img-fluid mb-4" src="./img/ucheck/family_vacation_1920.jpg" alt="">
-                    <h2>펫케어 서비스? </h2>
-                    <p>반려견 걱정에 가족과 함께 맘편히 여행을 하지 못하셨다고요?</p>
-                    <p>U체크인이 안심하실 수 있게 잘 케어해 드릴테니 맘 편히 다녀오세요~~^^</p>
-                    <p style="font-size:14px;">1. 고객 요청한 서비스의 방문자만 출입이 가능합니다.</p>
-                    <p style="font-size:14px;">2. 방문자는 신원 확인된 제휴 업체 인력입니다.</p>
-                    <p style="font-size:14px;">3. 예약된 일정에 'U 체크인'이 방문자에게 문을 열어주고 출입을 관리합니다.</p>
-                </div>
-            </div>
+        <div class="modal-body">
+          <!-- <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt=""> -->
+          <img class="img-fluid mb-4" src="./img/ucheck/dog_1920.jpg" alt="">
+          <img class="img-fluid mb-4" src="./img/ucheck/family_vacation_1920.jpg" alt="">
+          <h2>펫케어 서비스? </h2>
+          <p>반려견 걱정에 가족과 함께 맘편히 여행을 하지 못하셨다고요?</p>
+          <p>U체크인이 안심하실 수 있게 잘 케어해 드릴테니 맘 편히 다녀오세요~~^^</p>
+          <p style="font-size:14px;">1. 고객 요청한 서비스의 방문자만 출입이 가능합니다.</p>
+          <p style="font-size:14px;">2. 방문자는 신원 확인된 제휴 업체 인력입니다.</p>
+          <p style="font-size:14px;">3. 예약된 일정에 'U 체크인'이 방문자에게 문을 열어주고 출입을 관리합니다.</p>
         </div>
+      </div>
     </div>
-    <!-- Modal -->
+  </div>
+  <!-- Modal -->
 
-    <!-- Modal for Service-hy fresh Pop Up Page -->
-    <div class="modal fade" id="exampleModalLong_fresh" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">신선식품 배송 및 청소서비스</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <!-- <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt=""> -->
-                    <img class="img-fluid mb-4" src="./img/ucheck/hy_freshmanagerjpg.jpg" alt="">
-                    <img class="img-fluid mb-4" src="./img/ucheck/bottles_1920.jpg" alt="">
-                    <h2>신선식품 배송 서비스? </h2>
-                    <p>배송 식품이 상할까 걱정이 되셨다고요?</p>
-                    <p>U체크인이 안전하게 댁내까지 배송해드릴께요~!</p>
-                    <p style="font-size:14px;">1. 고객 요청한 서비스의 방문자만 출입이 가능합니다.</p>
-                    <p style="font-size:14px;">2. 방문자는 신원 확인된 제휴 업체 인력입니다.</p>
-                    <p style="font-size:14px;">3. 예약된 일정에 'U 체크인'이 방문자에게 문을 열어주고 출입을 관리합니다.</p>
-                </div>
-            </div>
+  <!-- Modal for Service-hy fresh Pop Up Page -->
+  <div class="modal fade" id="exampleModalLong_fresh" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle_b2b"
+       aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle_b2b">신선식품 배송 및 청소서비스</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <!-- <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt=""> -->
+          <img class="img-fluid mb-4" src="./img/ucheck/hy_freshmanagerjpg.jpg" alt="">
+          <img class="img-fluid mb-4" src="./img/ucheck/bottles_1920.jpg" alt="">
+          <h2>신선식품 배송 서비스? </h2>
+          <p>배송 식품이 상할까 걱정이 되셨다고요?</p>
+          <p>U체크인이 안전하게 댁내까지 배송해드릴께요~!</p>
+          <p style="font-size:14px;">1. 고객 요청한 서비스의 방문자만 출입이 가능합니다.</p>
+          <p style="font-size:14px;">2. 방문자는 신원 확인된 제휴 업체 인력입니다.</p>
+          <p style="font-size:14px;">3. 예약된 일정에 'U 체크인'이 방문자에게 문을 열어주고 출입을 관리합니다.</p>
+        </div>
+      </div>
     </div>
-    <!-- Modal -->
+  </div>
+  <!-- Modal -->
 
+  <!--	JK_S Footer 23.05.19 Ref.Bootstrap-->
+  <footer class="py-3 my-4 bg-light">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item">
+        <a href="introduce.html" target="" class="nav-link px-2 text-blue">회사소개</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-blue">서비스이용약관</a>
+      </li>
+      <li class="nav-item">
+        <a href="agreement.html" target="" class="nav-link px-2 text-blue">개인정보제공동의서</a>
+      </li>
+      <li class="nav-item">
+        <a href="contactUs.html" target="" class="nav-link px-2 text-blue">제휴안내</a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link px-2 text-blue">About</a>
+      </li>
+    </ul>
 
+    <ul class="nav justify-content-center pb-3">
+      <li class="nav-item">
+        <span style="font-size:12px; margin-right:20px">사업자등록번호 1234567890</span>
+      </li>
+      <li class="nav-item">
+        <span style="font-size:12px; margin-right:20px">U체크인 대표 이석구</span>
+      </li>
+      <li class="nav-item">
+        <span style="font-size:12px; margin-right:20px">TEL : 02) 1234-5678 / FAX : 02) 1234-5677</span>
+      </li>
+    </ul>
 
+    <p class="text-center text-body-secondary">Copyright ⓒ LG Uplus Corp. All Rights Reserved.</p>
+  </footer>
 
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+  <!--    <a href="#" class="btn btn-back-to-top-scroll"><i class="fa fa-angle-double-up"></i></a>-->
+  <!--	JK_E Footer 23.05.19 Ref.Bootstrap-->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
 
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>
