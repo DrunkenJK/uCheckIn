@@ -2,13 +2,13 @@
     "use strict";
 
     // Navbar on scrolling
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 200) {
-            $('.navbar').fadeIn('slow').css('display', 'flex');
-        } else {
-            $('.navbar').fadeOut('slow').css('display', 'none');
-        }
-    });
+//    $(window).scroll(function () {
+//        if ($(this).scrollTop() > 200) {
+//            $('.navbar').fadeIn('slow').css('display', 'flex');
+//        } else {
+//            $('.navbar').fadeOut('slow').css('display', 'none');
+//        }
+//    });
 
 
     // Smooth scrolling on the navbar links
@@ -109,10 +109,11 @@
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
         ],
     });
-    
+
 })(jQuery);
 
 /**
+
  * 올해가 몇 년도인지 계산
  */
 const thisYear = document.querySelector('.this-year')
